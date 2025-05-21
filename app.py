@@ -76,6 +76,7 @@ def generate_suggestions(shape, tone, gender, occasion, style):
     return tips
 
 if __name__ == "__main__":
-    app.run(git add app.py
-git commit -m "Fix Flask host and port for Render"
-git push)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+
